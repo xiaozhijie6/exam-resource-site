@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC',
+      'Microsoft YaHei', 'Noto Sans SC', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-slate-50 text-slate-900;
+    margin: 0;
+  }
+}
+
+@layer components {
+  .resource-card {
+    @apply bg-white rounded-xl shadow-sm border border-slate-100
+           hover:shadow-md hover:border-academic-200
+           transition-all duration-200 cursor-pointer p-6;
+  }
+
+  .sidebar-section {
+    @apply bg-white rounded-xl shadow-sm border border-slate-100 p-5;
+  }
+
+  .exam-card-gradient {
+    @apply relative overflow-hidden rounded-2xl shadow-lg
+           hover:shadow-xl transition-all duration-300
+           cursor-pointer;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: #cbd5e1;
+    border-radius: 3px;
+  }
+}

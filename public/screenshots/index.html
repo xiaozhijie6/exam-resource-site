@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>网站截图总览</title>
+<style>
+  body { font-family: system-ui; background: #0f172a; color: #e2e8f0; margin: 0; padding: 24px; }
+  h1 { text-align: center; font-size: 24px; margin-bottom: 32px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(640px, 1fr)); gap: 32px; max-width: 1400px; margin: 0 auto; }
+  .card { background: #1e293b; border-radius: 12px; overflow: hidden; border: 1px solid #334155; }
+  .card h2 { margin: 0; padding: 14px 20px; font-size: 16px; background: #334155; }
+  .card img { width: 100%; display: block; }
+  .card a { color: #60a5fa; font-size: 13px; padding: 8px 20px; display: inline-block; }
+</style>
+</head>
+<body>
+<h1>📸 网站截图总览（全页）</h1>
+<div class="grid">
+  <div class="card"><h2>🏠 首页</h2><img src="/screenshots/homepage.png"><a href="http://localhost:5173/#/">→ 打开实况</a></div>
+  <div class="card"><h2>🔑 登录页 (CareerCompass 风格)</h2><img src="/screenshots/login.png"><a href="http://localhost:5173/#/login">→ 打开实况</a></div>
+  <div class="card"><h2>📝 注册页</h2><img src="/screenshots/register.png"><a href="http://localhost:5173/#/register">→ 打开实况</a></div>
+  <div class="card"><h2>📝 CET-4 真题页</h2><img src="/screenshots/exam-cet4.png"><a href="http://localhost:5173/#/exam/cet4">→ 打开实况</a></div>
+  <div class="card"><h2>💎 四六级捆绑定价 CET4</h2><img src="/screenshots/pricing-cet4.png"><a href="http://localhost:5173/#/pricing/cet4">→ 打开实况</a></div>
+  <div class="card"><h2>💎 四六级捆绑定价 CET6</h2><img src="/screenshots/pricing-cet6.png"><a href="http://localhost:5173/#/pricing/cet6">→ 打开实况</a></div>
+  <div class="card"><h2>🎓 考研定价</h2><img src="/screenshots/pricing-kaoyan.png"><a href="http://localhost:5173/#/pricing/kaoyan">→ 打开实况</a></div>
+  <div class="card"><h2>🏛️ 考公定价</h2><img src="/screenshots/pricing-gongkao.png"><a href="http://localhost:5173/#/pricing/gongkao">→ 打开实况</a></div>
+  <div class="card"><h2>📧 联系我们</h2><img src="/screenshots/contact.png"><a href="http://localhost:5173/#/contact">→ 打开实况</a></div>
+</div>
+</body>
+</html>
